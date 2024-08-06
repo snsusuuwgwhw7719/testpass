@@ -126,13 +126,13 @@ def gen_user(choice):
         c = random.choices(a)
         d = random.choices(e)
         s = random.choices(e)
-        f = [c[0], s[0], s[0], s[0], d[0]]    
+        f = [c[0], d[0], s[0], s[0], s[0], s[0]]    
         username = ''.join(f)
         if username in banned[0]:
             c = random.choices(a)
             d = random.choices(a)
             s = random.choices(e)
-            f = [c[0], s[0], s[0], s[0], d[0]]    
+            f = [c[0], d[0], s[0], s[0], s[0], s[0]]    
             username = ''.join(f)
         else:
             pass
@@ -274,8 +274,8 @@ Run Tyeps `{choice}` On `{ch}` of `{msg[0]}` !
                 try:
                     await sython(functions.channels.UpdateUsernameRequest(
                         channel=ch, username=username))
-                    await event.client.send_file(event.chat_id, "https://t.me/x_o_x/53", caption=f'''@G_R_R - @x_o_x ''')
-                    await event.client.send_file("@KN2NK", "https://t.me/x_o_x/53", caption=f'''
+                    await event.client.send_file(event.chat_id, "https://t.me/x_o_x/53", caption=f''' @{username} - @G_R_R - @x_o_x ''')
+                    await event.client.send_file("https://t.me/+5l2mqBQjHqViYmE6", "https://t.me/x_o_x/53", caption=f'''
 ⌯ Done  🐊
 ⤷ UserName : @{username} 
 ⤷ Clicks : {trys} ''') 
