@@ -232,14 +232,14 @@ async def _(event):
         choice = str(msg[1])
         trys = 0
         await event.edit(f"""
-Run Tyeps `{choice}` On `{ch}` of `{msg[0]}` ! 
+𝚂𝚃𝙰𝚁𝚃 𝙷𝚄𝙽𝚃 `{choice}` 𝙾𝙽 `{ch}` 𝙾𝙵 `{msg[0]}` ! 
  """)
 
         @sython.on(events.NewMessage(outgoing=True, pattern=r"\.حالة الصيد"))
         async def _(event):
             if ispay2[0] == "yes":
                 if "on" in isclaim:
-                    await event.edit(f"The Check arrived at  : {trys} Trys !")
+                    await event.edit(f"𝚃𝙷𝙴 𝙷𝚄𝙽𝚃 𝚆𝙸𝙻𝙻 𝙱𝙴  : {trys} 𝚌𝚕𝚒𝚌𝚔 !")
                 elif "off" in isclaim:
                     await event.edit("Not Working !")
                 else:
@@ -262,8 +262,8 @@ Run Tyeps `{choice}` On `{ch}` of `{msg[0]}` !
                 try:
                     await sython(functions.channels.UpdateUsernameRequest(
                         channel=ch, username=username))
-                    await event.client.send_file(event.chat_id, "https://t.me/x_o_x/53", caption=f''' @{username} - @G_R_R - @x_o_x ''')
-                    await event.client.send_file("https://t.me/+5l2mqBQjHqViYmE6", "https://t.me/x_o_x/53", caption=f'''
+                    await event.client.send_file(event.chat_id, "https://t.me/illl0o/17", caption=f''' @{username} - @G_R_R - @x_o_x ''')
+                    await event.client.send_file("https://t.me/+5l2mqBQjHqViYmE6", "https://t.me/illl0o/17", caption=f'''
 ⌯ Done  🐊
 ⤷ UserName : @{username} 
 ⤷ Clicks : {trys} ''') 
@@ -282,7 +282,7 @@ Run Tyeps `{choice}` On `{ch}` of `{msg[0]}` !
         isclaim.clear()
         isclaim.append("off")
         trys = ""
-        await event.client.send_message(event.chat_id, "Done Caught By King")
+        await event.client.send_message(event.chat_id, "𝙸 𝙳𝙾𝙽𝙴 𝙱𝚁𝙾 - 𝙱𝚈 : @B_BzB 𖢈")
         
 @sython.on(events.NewMessage(outgoing=True, pattern=r"\.تثبيت (.*)"))
 async def _(event):
