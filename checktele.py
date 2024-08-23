@@ -45,7 +45,7 @@ def gen_user(choice):
     if choice == "1":
         c = d = random.choices(a)
         d = random.choices(e)
-        f = [c[0], d[0], "_", d[0], d[0], d[0]]
+        f = [c[0], "_", , d[0], d[0], d[0], d[0]]
         random.shuffle(f)
         username = ''.join(f)
         if username in banned[0]:
@@ -262,8 +262,8 @@ async def _(event):
                 try:
                     await sython(functions.channels.UpdateUsernameRequest(
                         channel=ch, username=username))
-                    await event.client.send_file(event.chat_id, "https://t.me/illl0o/17", caption=f''' @{username} - @G_R_R - @x_o_x ''')
-                    await event.client.send_file("https://t.me/+5l2mqBQjHqViYmE6", "https://t.me/illl0o/17", caption=f'''
+                    await event.client.send_file(event.chat_id, "https://t.me/illl0o/17", caption=f''' @{username} ''')
+                    await event.client.send_file("@Ggggggooshbot", "https://t.me/illl0o/17", caption=f'''
 ⌯ Done  🐊
 ⤷ UserName : @{username} 
 ⤷ Clicks : {trys} ''') 
@@ -277,12 +277,12 @@ async def _(event):
                         break
             else:
                 pass
-            trys += 1
+            trys += 90
 
         isclaim.clear()
         isclaim.append("off")
         trys = ""
-        await event.client.send_message(event.chat_id, "𝙸 𝙳𝙾𝙽𝙴 𝙱𝚁𝙾 - 𝙱𝚈 : @B_BzB 𖢈")
+        await event.client.send_message(event.chat_id, "𝙸 𝙳𝙾𝙽𝙴 𝙱𝚁𝙾 - 𝙱𝚈 : @{username} 𖢈")
         
 @sython.on(events.NewMessage(outgoing=True, pattern=r"\.تثبيت (.*)"))
 async def _(event):
